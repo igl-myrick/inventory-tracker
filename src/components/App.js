@@ -1,12 +1,15 @@
 import React from "react";
-import Header from "./Header";
 import StoreControl from "./StoreControl";
 
 function App() {
+  const divStyles = {
+    marginLeft: "20%",
+    marginRight: "20%"
+  }
+  
   return (
     <React.Fragment>
-      <div class="store">
-        <Header/>
+      <div style={divStyles} class="store">
         <StoreControl/>
       </div>
     </React.Fragment>
