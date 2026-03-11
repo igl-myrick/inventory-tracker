@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(83, 28, 0) 90vh, rgb(83, 28, 0) 100vh), url("./img/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color:antiquewhite;
+  min-height: 100vp
+}
+
+.store {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 code {
