@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Header(props) {
   const { handleClick, buttonText } = props;
@@ -24,6 +25,11 @@ function Header(props) {
       </div>
     </React.Fragment>
   );
+}
+
+Header.propTypes = {
+  handleClick: PropTypes.func,
+  buttonText: PropTypes.string
 }
 
 export default Header;
