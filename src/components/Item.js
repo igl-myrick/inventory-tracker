@@ -12,10 +12,10 @@ function Item(props) {
   return (
     <React.Fragment>
       <div onClick={() => props.whenItemClicked(props.id)}>
+        <hr/>
         <h3>{props.name} - ${props.price}</h3>
         <p>From {props.origin} - Roast: {props.roast}</p>
         {stockElem} 
-        <hr/>
       </div>
     </React.Fragment>
   );
