@@ -3,6 +3,7 @@ import NewItemForm from "./NewItemForm";
 import EditItemForm from "./EditItemForm";
 import ItemList from "./ItemList";
 import ItemView from "./ItemView";
+import Header from "./Header";
 
 function StoreControl() {
   const [formVisibleOnPage, setFormVisibleOnPage] = useState(false);
@@ -105,8 +106,8 @@ function StoreControl() {
 
   return (
     <React.Fragment>
+      <Header handleClick={handleClick} buttonText={buttonText}/>
       {currentlyVisibleState}
-      <button onClick={handleClick}>{buttonText}</button>
     </React.Fragment>
   );
 }
