@@ -53,7 +53,7 @@ function StoreControl() {
 
   const handleBuyingItem = () => {
     const parsedStock = parseInt(selectedItem.stock);
-    if (parsedStock > 1) {
+    if (parsedStock > 0) {
       const updatedItem = {...selectedItem, stock: parsedStock - 1};
       setSelectedItem(updatedItem);
 
