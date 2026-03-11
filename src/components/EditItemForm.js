@@ -12,6 +12,7 @@ function EditItemForm(props) {
       origin: event.target.origin.value,
       price: event.target.price.value,
       roast: event.target.roast.value,
+      stock: item.stock,
       id: item.id
     });
   }
