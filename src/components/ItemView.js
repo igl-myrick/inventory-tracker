@@ -28,7 +28,8 @@ function ItemView(props) {
 ItemView.propTypes = {
   item: PropTypes.object,
   onClickingEdit: PropTypes.func,
-  onClickingDelete: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingBuy: PropTypes.func
 }
 
 export default ItemView;
