@@ -5,8 +5,10 @@ import StoreControl from "./StoreControl";
 function App() {
   return (
     <React.Fragment>
-      <Header/>
-      <StoreControl/>
+      <div class="store">
+        <Header/>
+        <StoreControl/>
+      </div>
     </React.Fragment>
   );
 }
