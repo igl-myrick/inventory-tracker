@@ -9,7 +9,7 @@ function ItemView(props) {
       <h1>Item Details</h1>
       <h3>{item.name} - ${item.price}</h3>
       <p>From {item.origin} - Roast: {item.roast}</p>
-      <p>Stock: {item.stock} bags</p>
+      <p>Stock: {item.stock} pounds</p>
       <button onClick={onClickingBuy}>Buy Item</button>
       <button onClick={onClickingEdit}>Edit Item</button>
       <button onClick={() => onClickingDelete(item.id)}>Delete Item</button>

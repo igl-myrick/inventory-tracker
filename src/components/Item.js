@@ -7,7 +7,7 @@ function Item(props) {
       <div onClick={() => props.whenItemClicked(props.id)}>
         <h3>{props.name} - ${props.price}</h3>
         <p>From {props.origin} - Roast: {props.roast}</p>
-        <p>Stock: {props.stock} bags</p>
+        <p>Stock: {props.stock} pounds</p>
         <hr/>
       </div>
     </React.Fragment>
