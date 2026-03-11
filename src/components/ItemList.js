@@ -13,6 +13,7 @@ function ItemList(props) {
           origin={item.origin}
           price={item.price}
           roast={item.roast}
+          stock={item.stock}
           id={item.id}
           key={item.id}/>
       )}
