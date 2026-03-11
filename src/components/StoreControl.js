@@ -81,10 +81,10 @@ function StoreControl() {
           itemList={mainItemList}
           onItemSelection={handleChangingSelectedItem}
         />;
-      buttonText = "Add Item";
     } else {
       currentlyVisibleState = <p><i>No items yet...</i></p>
     }
+    buttonText = "Add Item";
   }
 
   return (
