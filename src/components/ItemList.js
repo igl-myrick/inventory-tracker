@@ -9,12 +9,12 @@ function ItemList(props) {
       {props.itemList.map((item) =>
         <Item
           whenItemClicked={props.onItemSelection}
-          name={props.name}
-          origin={props.origin}
-          price={props.price}
-          roast={props.roast}
-          id={props.id}
-          key={props.id}/>
+          name={item.name}
+          origin={item.origin}
+          price={item.price}
+          roast={item.roast}
+          id={item.id}
+          key={item.id}/>
       )}
     </React.Fragment>
   );
