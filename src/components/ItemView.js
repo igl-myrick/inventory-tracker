@@ -7,8 +7,8 @@ function ItemView(props) {
   return (
     <React.Fragment>
       <h1>Item Details</h1>
-      <h3>{props.name} - ${props.price}</h3>
-      <p>From {props.origin} - Roast: {props.roast}</p>
+      <h3>{item.name} - ${item.price}</h3>
+      <p>From {item.origin} - Roast: {item.roast}</p>
       <button onClick={onClickingEdit}>Edit Item</button>
       <button onClick={() => onClickingDelete(item.id)}>Delete Item</button>
     </React.Fragment>
