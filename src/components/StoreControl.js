@@ -51,6 +51,21 @@ function StoreControl() {
     setSelectedItem(null);
   }
 
+  const handleBuyingItem = () => {
+    const parsedStock = parseInt(selectedItem.stock);
+    if (parsedStock > 1) {
+      const updatedItem = {...selectedItem, stock: parsedStock - 1};
+      setSelectedItem(updatedItem);
+
+      const editedItemList = mainItemList.map(item =>
+        item.id === updatedItem.id ? updatedItem : item
+      );
+      setMainItemList(editedItemList);
+    } else {
+      return;
+    }
+  }
+
   let currentlyVisibleState = null;
   let buttonText = null;
 
@@ -66,7 +81,8 @@ function StoreControl() {
       <ItemView
         item={selectedItem}
         onClickingDelete={handleDeleteItem}
-        onClickingEdit={handleEditClick}/>;
+        onClickingEdit={handleEditClick}
+        onClickingBuy={handleBuyingItem}/>;
     buttonText = "Back to Item List";
   } else if (formVisibleOnPage) {
     currentlyVisibleState =
