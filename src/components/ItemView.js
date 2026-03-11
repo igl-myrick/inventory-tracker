@@ -3,6 +3,14 @@ import PropTypes from "prop-types";
 
 function ItemView(props) {
   const { item, onClickingEdit, onClickingDelete, onClickingBuy } = props;
+
+  let buttonText = null;
+
+  if (item.stock > 0) {
+    buttonText = "Buy Item";
+  } else {
+    buttonText = "Out of Stock";
+  }
   
   return (
     <React.Fragment>
@@ -10,7 +18,7 @@ function ItemView(props) {
       <h3>{item.name} - ${item.price}</h3>
       <p>From {item.origin} - Roast: {item.roast}</p>
       <p>Stock: {item.stock} pounds</p>
-      <button onClick={onClickingBuy}>Buy Item</button>
+      <button onClick={onClickingBuy}>{buttonText}</button>
       <button onClick={onClickingEdit}>Edit Item</button>
       <button onClick={() => onClickingDelete(item.id)}>Delete Item</button>
     </React.Fragment>
