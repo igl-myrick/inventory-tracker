@@ -13,8 +13,8 @@ function Header(props) {
     float: "right",
     width: "fit-content",
     height: "fit-content",
-    marginTop: "3%",
-    marginRight: "3%"
+    display: "flex",
+    alignSelf: "center"
   }
 
   return (
