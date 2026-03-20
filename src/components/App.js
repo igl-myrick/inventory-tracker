@@ -9,7 +9,7 @@ function App() {
   
   return (
     <React.Fragment>
-      <div style={divStyles} class="store">
+      <div style={divStyles} className="store">
         <StoreControl/>
       </div>
     </React.Fragment>
