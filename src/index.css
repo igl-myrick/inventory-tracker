@@ -5,14 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(83, 28, 0) 90vh, rgb(83, 28, 0) 100vh), url("./img/background.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color:antiquewhite;
-  min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(83, 28, 0) 90vh, rgb(83, 28, 0) 100vh), url("./img/background.jpg");
+    background-repeat: no-repeat;
+    color:antiquewhite;
+    min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (orientation: landscape) {
+  body {
+    background-size: 100%;
+  }
+}
+
+
+@media (orientation: portrait) {
+  body {
+    background-position: center;
+  }
 }
